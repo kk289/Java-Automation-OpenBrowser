@@ -361,8 +361,136 @@ Now run the "TestFirefox" class. If there is not any error in the code, the fire
 <details>
 	<summary><h3>Test Safari Browser : Java Automation</h3></summary>
 
+This one took more time to setup while comparing with other two browsers. Since Safari is Apple's official browser, we need to pre-setup some steps before we run the program. I am going to post the code for the "TestSafari" class, and after that please follow the steps to run the program successfully.
+
+<b> TestSafari </b>
+
+```
+package openSafari;
+
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+public class TestSafari {
+
+    @Test
+	public void safariBrowser() throws InterruptedException {
+        // Instantiate a SafariDriver class.
+        System.setProperty("webdriver.safari.driver","/usr/bin/safaridriver");
+
+        WebDriver driver = new SafariDriver();
+
+        // Launch Website
+        driver.get("http://www.google.com");
+
+        // Print a Log In message to the screen
+        System.out.println("Successfully Opened the website");
+
+        // Maximize Browser
+        driver.manage().window().maximize();
+
+        // Wait for 5 sec
+        Thread.sleep(5000);
+
+        // Close the Browser
+        driver.quit();
+    }
+}
+```
+
+We can go to this [website](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari) to know about the testing with webdriver in safari. 
+
+There are bunch of articles saying how to implement the testing with safari browser using extension. But it is old now. Safari does not need any extension now. 
+
+ 
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari1.png" align="center"/>
+</p>
+
+Let's get the "safaridriver" first.
+
+- Step 1:
+
+Apple already mentioned in the website that Safari Webdriver is already in the system, we just need to turn it on using terminal. 
+
+Open Terminal 
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/Terminal1.png" align="center"/>
+</p>
+
+- Step 2:
+
+Type: cd /usr/bin/ and then type: ls
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari2.png" align="center"/>
+</p>
+
+Now find a "safaridriver" and if it is there, type: safaridriver --enable
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari3.png" align="center"/>
+</p>
+
+Type your computer login password. The "safaridriver" is now turned on. Whereas in TestChrome, we had to download chromedriver and stored in either /usr/local/bin or /usr/bin folder. 
+
+- Step 3:
+
+Now we need to setup Safari Browser before we run the TestSafari class.
+
+Open Safari Browser.
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari4.png" align="center"/>
+</p>
+
+- Step 4:
+
+Click on Safari in menu bar, and choose "Preferences"
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari5.png" align="center"/>
+</p>
+
+- Step 5:
+
+Go to Advanced, and Click on "Show Develop menu in menu bar"
+
+<p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari6.png" align="center"/>
+</p>
+
+- Step 6:
+
+Once the "Show Develop menu in menu bar" is turned on, we can see "Develop" in menu bar. 
+
+ <p align="center">
+	<img width="800px" src="OpenBrowser/Image/safari7.png" align="center"/>
+</p>
+
+Click on Develop menu in menu bar, and choose "Allow Remote Automation"
+
+ <p align="center">
+	<img width="600px" src="OpenBrowser/Image/safari8.png" align="center"/>
+</p>
 
 
+Let's go back to "TestSafari" class. Before we test the program, make we have setproperty correclty. 
+
+```
+System.setProperty("webdriver.safari.driver","/usr/bin/safaridriver");
+```
+
+We can run the TestSafari class, and the test class should be passed now. 
+
+<p align="center">
+	<img width="700px" src="OpenBrowser/Image/safari9.png" align="center"/>
+	<br>
+	<br>
+	<img width="800px" src="OpenBrowser/Image/safari10.png" align="center"/>
+</p>
 
 </details>
-
+</details>
