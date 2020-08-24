@@ -1,6 +1,5 @@
 <h2> Open Browser Using Java Automation </h2>
 
----
 
 <h3><b>For Apple Macbook User:</b></h3>
 
@@ -149,7 +148,7 @@ To Check which version of Google Chrome you have:
 
 - Step 2:
 
-Now you know what version of google chrome you are using, lets download "chromedriver". Go to following website: [Click Here](https://chromedriver.chromium.org/downloads)
+Now you know what version of google chrome you are using, lets download "chromedriver". Download From Here: [Click Here](https://chromedriver.chromium.org/downloads)
 
 Download the ChromeDriver based on your current version of Google Chrome.
 
@@ -190,13 +189,13 @@ You can do as I did, placed in system. I strongly recommend you to keep in usr/l
 1. Open Terminal
 
 <p align="center">
-	<img width="600px" src="OpenBrowser/Image/Terminal.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal1.png" align="center"/>
 </p>
 
 2. To Check where you are. Type: ls. It shows all files in current directory.
 
 <p align="center">
-	<img width="600px" src="OpenBrowser/Image/Termina2.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal2.png" align="center"/>
 </p>
 
 3. Find the folder where you have stored the "chromedriver" file. Since I have saved in Downloads folder, I will go there. To go to Downloads folder,
