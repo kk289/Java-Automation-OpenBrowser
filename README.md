@@ -1,17 +1,27 @@
 <h2> Open Browser Using Java Automation </h2>
 
+---
+
 <h3><b>For Apple Macbook User:</b></h3>
 
 Platform supporting Maven: [IntelliJ IDEA CE](https://www.jetbrains.com/idea/download/download-thanks.html?platform=mac&code=IIC)
 
 1. Create a new Project
+
 2. Choose [Maven](https://en.wikipedia.org/wiki/Apache_Maven#:~:text=Maven%20is%20a%20build%20automation,%2C%20Scala%2C%20and%20other%20languages.&text=Maven%20is%20built%20using%20a,application%20controllable%20through%20standard%20input.)
+
 3. In Project SDK box, make sure you have latest version of java "JDK"
-![CreateProject](OpenBrowser/Image/_1CreateProject.png)
+
+<img width="100px" src="OpenBrowser/Image/_1CreateProject.png" align="center"/>
+
 4. Click Next, and give a name to your project, like "OpenBrowser"
+
 5. Since we are just testing the browsers, we don't need "main" folder inside "src". 
+
 6. Now create a package inside src/java/ and name it "openChrome" then create a class inside it, name it "TestChrome"
+
 7. Create a package inside src/java/ and name it "openFirefox" then create a class inside it, name it "TestFirefox"
+
 8. Create a package inside src/java/ and name it "openSafari" then create a class inside it, name it "TestSafari"
 
 
@@ -83,7 +93,7 @@ An example of [pom.xml](https://github.com/kk289/Java-Automation-OpenBrowser/blo
 
 9. Make sure to setup your "pom.xml" file like above. Just replace your pom.xml file with this [pom.xml](https://github.com/kk289/Java-Automation-OpenBrowser/blob/master/OpenBrowser/pom.xml)
 
-<h4>Test Chrome Browser : Java Automation</h4>
+<h3>Test Chrome Browser : Java Automation</h3>
 
 Let's take a look at "TestChrome" class:
 
