@@ -102,7 +102,7 @@ Make sure you have same version of "selenium-java" and "selenium-api". If they a
 <details>
 	<summary><h3>Test Chrome Browser : Java Automation</h3></summary>
 
-Let's take a look at "TestChrome" class:
+Let's look at "TestChrome" class:
 
 ```
 package openChrome;
@@ -148,6 +148,7 @@ To Check which version of Google Chrome you have:
 
 <p align="center">
 	<img width="600px" src="OpenBrowser/Image/googleversion1.png" align="center"/>
+	<br>
 	<br>
 	<img width="600px" src="OpenBrowser/Image/googleversion2.png" align="center"/>
 </p> 
@@ -238,9 +239,10 @@ If you have followed the above step, you can use my entire TestChrome class. No 
 So far, we already setup "pom.xml" file, "TestChrome" class also. Let's Run the TestChrome File. If it is alright, your test class should pass.
 
 <p align="center">
-	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
+	<img width="700px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
 	<br>
-	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+	<br>
+	<img width="700px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
 </p>
 
 <details>
@@ -289,7 +291,8 @@ You can run the TestChrome class. (Click "okay" if any window pop-up) And your t
 <p align="center">
 	<img width="700px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
 	<br>
-	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+	<br>
+	<img width="700px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
 </p>
 
 </details>
@@ -300,9 +303,9 @@ You can run the TestChrome class. (Click "okay" if any window pop-up) And your t
 <details>
 	<summary><h3>Test Firefox Browser : Java Automation</h3></summary>
 
-Now, Let's take a look at "TestFirefox" class. There is not any vast different between TestChrome and TestFirefox. We just need to change some codes. That's it.
+Now, Let's look at "TestFirefox" class. There is not any vast difference between TestChrome and TestFirefox. We just need to change some codes. That's it.
 
-Make sure you have downloaded Firefox browser in your laptop. and also we don't need change anything in "pom.xlm" file. 
+Make sure you have Firefox browser in your laptop. and also we don't need to change anything in "pom.xlm" file. 
 
 <b> TestFirefox </b>
 
@@ -340,15 +343,15 @@ public class TestFirefox {
 }
 ```
 
-Here, We are not downloading any firefoxdriver. We can simply import selenium dependency (org.openqa.selenium.firefox.FirefoxDriver) to test Firefox browser in Macbook. 
+Here, we are not downloading any firefoxdriver. We can simply import selenium dependency (org.openqa.selenium.firefox.FirefoxDriver) to test Firefox browser in Macbook. 
 
-Now run the "TestFirefox" class. If there are not any errors, the test class should be passed.
+Now run the "TestFirefox" class. If there is not any error in the code, the firefox test class should be passed.
 
 <p align="center">
 	<img width="700px" src="OpenBrowser/Image/FirefoxTestpassed1.png" align="center"/>
 	<br>
 	<br>
-	<img width="600px" src="OpenBrowser/Image/FirefoxTestpassed2.png" align="center"/>
+	<img width="700px" src="OpenBrowser/Image/FirefoxTestpassed2.png" align="center"/>
 </p>
 
 </details>
