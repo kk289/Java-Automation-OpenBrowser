@@ -299,9 +299,67 @@ You can run the TestChrome class. (Click "okay" if any window pop-up) And your t
 
 <details>
 	<summary><h3>Test Firefox Browser : Java Automation</h3></summary>
+
+Now, Let's take a look at "TestFirefox" class. There is not any vast different between TestChrome and TestFirefox. We just need to change some codes. That's it.
+
+Make sure you have downloaded Firefox browser in your laptop. and also we don't need change anything in "pom.xlm" file. 
+
+<b> TestFirefox </b>
+
+```
+package openFirefox;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestFirefox {
+
+    @Test
+    public void firefoxBrowser() throws InterruptedException {
+
+        WebDriverManager.firefoxdriver().setup();
+
+        WebDriver wd = new FirefoxDriver();
+
+        wd.get("http://www.google.com");
+
+        // Print a Log In message to the screen
+        System.out.println("Successfully opened the website");
+
+        // Maximize Browser
+        wd.manage().window().maximize();
+
+        // Wait for 5 sec
+        Thread.sleep(5000);
+
+        // Close
+        wd.quit();
+    }
+}
+```
+
+Here, We are not downloading any firefoxdriver. We can simply import selenium dependency (org.openqa.selenium.firefox.FirefoxDriver) to test Firefox browser in Macbook. 
+
+Now run the "TestFirefox" class. If there are not any errors, the test class should be passed.
+
+<p align="center">
+	<img width="700px" src="OpenBrowser/Image/FirefoxTestpassed1.png" align="center"/>
+	<br>
+	<br>
+	<img width="600px" src="OpenBrowser/Image/FirefoxTestpassed2.png" align="center"/>
+</p>
+
 </details>
 
+---
 
 <details>
 	<summary><h3>Test Safari Browser : Java Automation</h3></summary>
+
+
+
+
 </details>
+
