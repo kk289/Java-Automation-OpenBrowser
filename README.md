@@ -25,8 +25,8 @@ Platform supporting Maven: [IntelliJ IDEA CE](https://www.jetbrains.com/idea/dow
 
 8. Create a package inside src/java/ and name it "openSafari" then create a class inside it, name it "TestSafari"
 
-<details>
-	<h4> What is Maven? </h4>
+
+<h4> What is Maven? </h4>
 
 "Maven is a build automation tool used primarily for Java projects. Maven can also be used to build and manage projects written in C#, Ruby, Scala, and other languages.
 
@@ -99,8 +99,8 @@ NOTE:
 
 Make sure you have same version of "selenium-java" and "selenium-api". If they are different version, it could create error and test won't be passed.
 
-
-<h3>Test Chrome Browser : Java Automation</h3>
+<details>
+	<summary><h3>Test Chrome Browser : Java Automation</h3></summary>
 
 Let's take a look at "TestChrome" class:
 
@@ -298,12 +298,10 @@ You can run the TestChrome class. (Click "okay" if any window pop-up) And your t
 ---
 
 <details>
-	<h3>Test Firefox Browser : Java Automation</h3>
+	<summary><h3>Test Firefox Browser : Java Automation</h3></summary>
 </details>
 
 
 <details>
-	<h3>Test Safari Browser : Java Automation</h3>
+	<summary><h3>Test Safari Browser : Java Automation</h3></summary>
 </details>
-
-
