@@ -8,6 +8,7 @@ public class TestSafari {
 
     @Test
     public void safariBrowser() throws InterruptedException {
+
         // Instantiate a SafariDriver class.
         System.setProperty("webdriver.safari.driver","/usr/bin/safaridriver");
 
