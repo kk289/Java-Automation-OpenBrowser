@@ -434,7 +434,7 @@ Now find a "safaridriver" and if it is there, type: safaridriver --enable
 	<img width="600px" src="OpenBrowser/Image/safari3.png" align="center"/>
 </p>
 
-Type your computer login password. The "safaridriver" is now turned on. Whereas in TestChrome, we had to download chromedriver and stored in either /usr/local/bin or /usr/bin folder. 
+Enter your computer login password. The "safaridriver" is now turned on. Whereas in TestChrome, we had to download chromedriver and stored in either /usr/local/bin or /usr/bin folder. 
 
 - Step 3:
 
@@ -477,7 +477,7 @@ Click on Develop menu in menu bar, and choose "Allow Remote Automation"
 </p>
 
 
-Let's go back to "TestSafari" class. Before we test the program, make we have setproperty correclty. 
+Let's go back to "TestSafari" class. Before we test the program, make sure we have setproperty correclty. 
 
 ```
 System.setProperty("webdriver.safari.driver","/usr/bin/safaridriver");
@@ -492,5 +492,9 @@ We can run the TestSafari class, and the test class should be passed now.
 	<img width="800px" src="OpenBrowser/Image/safari10.png" align="center"/>
 </p>
 
+
+I hope your program is working now w/o any errors. Thank you for checking out my github! Please give a star if u like it and Fork it if you need.
+
 </details>
-</details>
+
+
