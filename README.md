@@ -94,6 +94,12 @@ An example of [pom.xml](https://github.com/kk289/Java-Automation-OpenBrowser/blo
 
 9. Make sure to setup your "pom.xml" file like above. Just replace your pom.xml file with this [pom.xml](https://github.com/kk289/Java-Automation-OpenBrowser/blob/master/OpenBrowser/pom.xml)
 
+
+NOTE: 
+
+Make sure you have same version of "selenium-java" and "selenium-api". If they are different version, it could create error and test won't be passed.
+
+
 <h3>Test Chrome Browser : Java Automation</h3>
 
 Let's take a look at "TestChrome" class:
@@ -192,7 +198,7 @@ You can do as I did, placed in system. I strongly recommend you to keep in usr/l
 	<img width="600px" src="OpenBrowser/Image/Terminal1.png" align="center"/>
 </p>
 
-2. To Check where you are. Type: ls. It shows all files in current directory.
+2. To Check where you are. Type: ls (It shows all files in current directory.)
 
 <p align="center">
 	<img width="600px" src="OpenBrowser/Image/Terminal2.png" align="center"/>
@@ -238,7 +244,7 @@ So far, we already setup "pom.xml" file, "TestChrome" class also. Let's Run the 
 </p>
 
 <details>
-	<summary>Check Here: If you got any Error</summary>
+	<summary><b>Check Here: If you got any Error</b></summary>
 
 Apple computers are so strict on running any third-party softwares or file. Here we are using chromedriver file which we downloaded from website. While running TestChrome class, you might have got this error: 
 
