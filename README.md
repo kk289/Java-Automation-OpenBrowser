@@ -13,7 +13,7 @@ Platform supporting Maven: [IntelliJ IDEA CE](https://www.jetbrains.com/idea/dow
 3. In Project SDK box, make sure you have latest version of java "JDK"
 
 <p align="center">
-<img width="700px" src="OpenBrowser/Image/_1CreateProject.png" align="center"/>
+	<img width="700px" src="OpenBrowser/Image/_1CreateProject.png" align="center"/>
 </p>
 
 4. Click Next, and give a name to your project, like "OpenBrowser"
@@ -139,19 +139,28 @@ Since my Mac couldnot run selenium.WebDriver, I had to follow manual way. If "se
 
 - Step 1:
 
-To Check which version of Google Chrome you have: 
-![step1](OpenBrowser/Image/googleversion1.png)
-![step2](OpenBrowser/Image/googleversion2.png)
+To Check which version of Google Chrome you have:
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/googleversion1.png" align="center"/>
+	<img width="500px" src="OpenBrowser/Image/googleversion2.png" align="center"/>
+</p> 
 
 - Step 2:
 
 Now you know what version of google chrome you are using, lets download "chromedriver". Go to following website: [Click Here](https://chromedriver.chromium.org/downloads)
 
 Download the ChromeDriver based on your current version of Google Chrome.
-![chromedriver1](OpenBrowser/Image/chromedriver1.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/chromedriver1.png" align="center"/>
+</p> 
 
 Choose "chromedriver_mac64.zip"
-![chromedriver2](OpenBrowser/Image/chromedriver2.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/chromedriver2.png" align="center"/>
+</p>
 
 - Step 3: 
 
@@ -164,7 +173,11 @@ System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
 Like I said before, I had to download chromedriver to run the program. "/usr/local/bin/chromedriver" is the location where I have placed my chromedriver. Or some laptop may have name it as "/user/local/bin/" or "/user/bin/". Make sure where is your bin folder in laptop.
 
 Now either you can simply copy and paste the unzip chromedriver to the OpenBrowser project folder, like this: 
-![chromedriver3](OpenBrowser/Image/chromedriver3.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/chromedriver3.png" align="center"/>
+</p>
+
 
 OR,
 
@@ -174,24 +187,39 @@ You can do as I did, placed in system. I strongly recommend you to keep in usr/l
 	<summary><b> Click Here to Know How to Store "chromedriver" in /usr/local/bin/ of your Macbook using Terminal</b></summary>
 
 1. Open Terminal
-![Terminal](OpenBrowser/Image/Terminal.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/Terminal.png" align="center"/>
+</p>
 
 2. To Check where you are. Type: ls. It shows all files in current directory.
-![Terminal](OpenBrowser/Image/Terminal2.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/Termina2.png" align="center"/>
+</p>
 
 3. Find the folder where you have stored the "chromedriver" file. Since I have saved in Downloads folder, I will go there. To go to Downloads folder,
 Type: cd Downloads and after that type: ls
-![Terminal3](OpenBrowser/Image/Terminal3.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/Terminal3.png" align="center"/>
+</p>
 
 Now you are inside Downloads folder. You can see "chromedriver" file there. 
 
 4. Type: mv chromedriver /usr/local/bin  and then type: ls
-![Terminal4](OpenBrowser/Image/Termainal4.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/Terminal4.png" align="center"/>
+</p>
 
 Now there is no "chromedriver" file. It is already moved to /usr/local/bin/.
 
 5. Type: cd /usr/local/bin and then type: ls
-![Terminal5](OpenBrowser/Image/Terminal5.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/Terminal5.png" align="center"/>
+</p>
 
 Now we are inside /usr/local/bin directory. If you have good eyesight, you can find "chromedriver" file there which is now stored in user system.
 
@@ -201,37 +229,60 @@ If you have followed the above step, you can use my entire TestChrome class. No 
 
 </details>
 
-So far, we already setup "pom.xml" file, "TestChrome" class also. Let's Run the TestChrome File. If it is alright, your test class should pass. 
-![ChromeTestpassed2](OpenBrowser/Image/ChromeTestpassed2.png)
-![ChromeTestpassed](OpenBrowser/Image/ChromeTestpassed.png)
+So far, we already setup "pom.xml" file, "TestChrome" class also. Let's Run the TestChrome File. If it is alright, your test class should pass.
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
+	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+</p>
 
 <details>
 	<summary>Check Here: If you got any Error</summary>
 
 Apple computers are so strict on running any third-party softwares or file. Here we are using chromedriver file which we downloaded from website. While running TestChrome class, you might have got this error: 
-![Chromeerror1](OpenBrowser/Image/ChromeError1.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError1.png" align="center"/>
+</p>
 
 To solve this issue, 
 
 1. First, Go to System Preferences. 
-![Chromeerror2](OpenBrowser/Image/ChromeError2.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError2.png" align="center"/>
+</p>
 
 2. Click on "Security & Privacy"
-![Chromeerror3](OpenBrowser/Image/ChromeError3.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError3.png" align="center"/>
+</p>
 
 3. Click on "Allow Anyway"
-![Chromeerror4](OpenBrowser/Image/ChromeError4.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError4.png" align="center"/>
+</p>
 
 This is how we can able to use "chromedriver" file. Go back to the project and before running the TestChrome class, let's refresh our project by clicking the "Maven" which is on upper right side of our IntelliJ window. 
-![Chromeerror5](OpenBrowser/Image/ChromeError5.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError5.png" align="center"/>
+</p>
 
 Now you can see refresh button like recycle type symbol there, click that, and your project is now refreshed.
-![Chromeerror6](OpenBrowser/Image/ChromeError6.png)
 
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeError6.png" align="center"/>
+</p>
 
 You can run the TestChrome class. (Click "okay" if any window pop-up) And your test class should be passed now. 
-![ChromeTestpassed2](OpenBrowser/Image/ChromeTestpassed2.png)
-![ChromeTestpassed](OpenBrowser/Image/ChromeTestpassed.png)
+
+<p align="center">
+	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
+	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+</p>
 
 </details>
 
