@@ -142,8 +142,9 @@ Since my Mac couldnot run selenium.WebDriver, I had to follow manual way. If "se
 To Check which version of Google Chrome you have:
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/googleversion1.png" align="center"/>
-	<img width="500px" src="OpenBrowser/Image/googleversion2.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/googleversion1.png" align="center"/>
+	<br>
+	<img width="600px" src="OpenBrowser/Image/googleversion2.png" align="center"/>
 </p> 
 
 - Step 2:
@@ -153,13 +154,13 @@ Now you know what version of google chrome you are using, lets download "chromed
 Download the ChromeDriver based on your current version of Google Chrome.
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/chromedriver1.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/chromedriver1.png" align="center"/>
 </p> 
 
 Choose "chromedriver_mac64.zip"
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/chromedriver2.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/chromedriver2.png" align="center"/>
 </p>
 
 - Step 3: 
@@ -189,20 +190,20 @@ You can do as I did, placed in system. I strongly recommend you to keep in usr/l
 1. Open Terminal
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/Terminal.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal.png" align="center"/>
 </p>
 
 2. To Check where you are. Type: ls. It shows all files in current directory.
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/Termina2.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Termina2.png" align="center"/>
 </p>
 
 3. Find the folder where you have stored the "chromedriver" file. Since I have saved in Downloads folder, I will go there. To go to Downloads folder,
 Type: cd Downloads and after that type: ls
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/Terminal3.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal3.png" align="center"/>
 </p>
 
 Now you are inside Downloads folder. You can see "chromedriver" file there. 
@@ -210,7 +211,7 @@ Now you are inside Downloads folder. You can see "chromedriver" file there.
 4. Type: mv chromedriver /usr/local/bin  and then type: ls
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/Terminal4.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal4.png" align="center"/>
 </p>
 
 Now there is no "chromedriver" file. It is already moved to /usr/local/bin/.
@@ -218,7 +219,7 @@ Now there is no "chromedriver" file. It is already moved to /usr/local/bin/.
 5. Type: cd /usr/local/bin and then type: ls
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/Terminal5.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/Terminal5.png" align="center"/>
 </p>
 
 Now we are inside /usr/local/bin directory. If you have good eyesight, you can find "chromedriver" file there which is now stored in user system.
@@ -232,8 +233,9 @@ If you have followed the above step, you can use my entire TestChrome class. No 
 So far, we already setup "pom.xml" file, "TestChrome" class also. Let's Run the TestChrome File. If it is alright, your test class should pass.
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
-	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
+	<br>
+	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
 </p>
 
 <details>
@@ -280,8 +282,9 @@ Now you can see refresh button like recycle type symbol there, click that, and y
 You can run the TestChrome class. (Click "okay" if any window pop-up) And your test class should be passed now. 
 
 <p align="center">
-	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
-	<img width="500px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
+	<img width="700px" src="OpenBrowser/Image/ChromeTestpassed2.png" align="center"/>
+	<br>
+	<img width="600px" src="OpenBrowser/Image/ChromeTestpassed.png" align="center"/>
 </p>
 
 </details>
