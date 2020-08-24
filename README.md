@@ -13,7 +13,7 @@ Platform supporting Maven: [IntelliJ IDEA CE](https://www.jetbrains.com/idea/dow
 3. In Project SDK box, make sure you have latest version of java "JDK"
 
 <p align="center">
-<img width="1000px" src="OpenBrowser/Image/_1CreateProject.png" align="center"/>
+<img width="700px" src="OpenBrowser/Image/_1CreateProject.png" align="center"/>
 </p>
 
 4. Click Next, and give a name to your project, like "OpenBrowser"
